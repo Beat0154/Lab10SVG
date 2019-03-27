@@ -10,7 +10,6 @@ div{
     margin: auto;
     display: flex;
     justify-content: center;
-    
 }
 button{
     color: black;
@@ -34,6 +33,7 @@ button:hover{
 .animation1{
     transform-origin: center top;
     animation: animation1 3s 1;
+    animation-timing-function: linear;
 }
 @keyframes animation1{
     0% {transform: rotateX(0deg) rotateY(0deg);}
@@ -84,4 +84,15 @@ button:hover{
     0%{transform: rotateZ(0deg);}
     50%{transform: rotateZ(180deg);}
     100%{transform: rotateZ(360deg);}
+}
+.animation6{
+    transform-origin: center;
+    animation: animation6 2s 1;
+    animation-timing-function: linear;
+}
+@keyframes animation6{
+    0%{transform: translateX(0rem) rotateZ(0deg);}
+    49.9%{transform: translateX(60rem) rotateZ(360deg);}
+    50%{transform: translateX(-60rem) rotateZ(720deg);}
+    100%{transform: translateX(0rem) rotateZ(1080deg);}
 }

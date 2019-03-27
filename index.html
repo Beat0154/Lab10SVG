@@ -14,6 +14,7 @@
 <button id="btn2" class="btn2">Animation 2</button>
 <button id="btn3" class="btn3">Animation 3</button>
 <button id="btn4" class="btn4">Animation 4</button>
+<button id="btn5" class="btn5">Animation 5</button>
 <br/><br/><br/><br/><br/><br/>
 <div>
 <svg id="outside" class="outside" viewBox="0 0 1300 1500">
@@ -57,6 +58,13 @@ $(document).ready(function(){
         $("#outside").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(){
             $(this).removeClass("animation5");
         }).addClass("animation5");
+    });
+}); 
+$(document).ready(function(){     
+    $("#btn5").click(function(){
+        $("#inside").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(){
+            $(this).removeClass("animation6");
+        }).addClass("animation6");
     });
 }); 
 </script>
